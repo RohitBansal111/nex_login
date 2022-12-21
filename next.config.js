@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  distDir: 'build',
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   env: {
     ApiKey: process.env.ApiKey,
     AuthDomain: process.env.AuthDomain,
